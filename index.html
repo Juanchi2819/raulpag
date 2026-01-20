@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Raúl Nahas | Deep Plane Face Lift</title>
+    <meta name="description" content="Rejuvenecimiento facial de alta precisión. Recupera firmeza y naturalidad con la técnica Deep Plane.">
+
+    <!-- Optimización de carga VTurb -->
+    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+    <link rel="preload" href="https://scripts.converteai.net/327a427e-9ecf-4f8e-81db-723589ee90d7/players/696aa83010d72bdc9f320cd8/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/327a427e-9ecf-4f8e-81db-723589ee90d7/696aa811dd2fe7b4886aa022/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome (para iconos del timeline de recuperación) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* * AURELIA WEB DS - DR. NAHAS (VERSION BLUE/CLEAN) * */
+        :root {
+            /* Colores Base */
+            --color-white-ref: #FFFFFF;
+            --color-bg: #F8FAFC; 
+            --color-surface: #FFFFFF;
+            
+            /* Tipografía y Textos */
+            --color-text: #334155;        /* Gris medio para lectura */
+            --color-text-heading: #0F172A; /* Azul muy oscuro/negro para títulos */
+            --color-text-muted: #64748B;
+            
+            /* Paleta Principal (Sky Blue) */
+            --color-primary: #0EA5E9; 
+            --color-primary-dark: #0284C7; 
+            --color-accent: #E0F2FE; 
+            
+            --color-border: #E2E8F0;
+            
+            /* Tipografía */
+            --font-display: 'Manrope', sans-serif;
+            --font-text: 'Manrope', sans-serif;
+            --font-size-base: 16px;
+            --font-size-lg: 20px;
+            --font-size-xl: 24px;
+            --font-size-4xl: 2.25rem;
+            --font-size-5xl: 3rem;
+            --font-size-md: 1.125rem;
+            --font-size-sm: 0.875rem;
+            --font-bold: 700;
+            --line-height-snug: 1.375;
+            
+            /* Layout & Spacing */
+            --radius-lg: 12px; 
+            --radius-xl: 24px; 
+            --radius-full: 999px;
+            
+            --spacing-2: 8px;
+            --spacing-4: 16px; 
+            --spacing-6: 24px; 
+            --spacing-8: 32px; 
+            --spacing-10: 48px; 
+            --spacing-12: 64px;
+            
+            /* Shadows (Suaves/Tech) */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            --shadow-glow: 0 0 20px rgba(14, 165, 233, 0.15);
+
+            --container-max-width: 1100px;
+            --container-padding: 20px;
+            --border-hairline: 1px solid var(--color-border);
+        }
+
+        /* RESET & BASE */
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: var(--font-text);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            color: var(--color-text-heading);
+            margin-top: 0;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: 2rem; margin-bottom: var(--spacing-4); letter-spacing: -0.01em; }
+        p { margin-bottom: var(--spacing-4); }
+        img { max-width: 100%; height: auto; display: block; border-radius: var(--radius-lg); }
+        a { text-decoration: none; color: inherit; }
+
+        /* UTILIDADES */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+        .section { padding: var(--spacing-12) 0; }
+        .text-center { text-align: center; }
+        .text-primary { color: var(--color-primary); }
+        .bg-white { background-color: var(--color-surface); }
+        .bg-gray { background-color: var(--color-bg); }
+        
+        /* Grid System Responsivo */
+        .grid { display: grid; gap: var(--spacing-6); }
+        .grid-2 { grid-template-columns: 1fr; }
+        .grid-3 { grid-template-columns: 1fr; }
+        .grid-4 { grid-template-columns: 1fr; } /* Mobile first */
+        .grid-cols-2 { grid-template-columns: 1fr; }
+        .grid-cols-3 { grid-template-columns: 1fr; }
+        .grid-cols-4 { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-4); }
+        
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2.5rem; }
+            .grid-2, .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3, .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-4, .grid-cols-4 { grid-template-columns: repeat(4, 1fr); } 
+        }
+        @media (min-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* COMPONENTES DE TU ESTILO PREFERIDO */
+        
+        /* Botón Estilo Aurelia (Outline/Glass) */
+        .btn, .btn-cta, .btn-cta-3d {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            /* Estilo Outline/Glass Aurelia */
+            background-color: rgba(14, 165, 233, 0.05);
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary-dark);
+            
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: var(--radius-full);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-cta:hover, .btn-cta-3d:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white-ref);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.25);
+        }
+        .btn-cta svg, .btn-cta-3d svg {
+            fill: currentColor;
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-text);
+            border: 2px solid var(--color-border);
+            padding: 12px 24px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+        }
+
+        /* Tarjetas "Glass" / Limpias (SIN BORDES) */
+        .card {
+            background: var(--color-surface);
+            border: none; /* Eliminado el borde */
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-6);
+            box-shadow: var(--shadow-md); /* Sombra suave para definición */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* HERO "LAMP" STYLE */
+        .hero-section, .lamp-section {
+            position: relative;
+            padding-top: 100px;
+            padding-bottom: var(--spacing-12);
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #F0F9FF 0%, var(--color-bg) 100%);
+        }
+        /* Grid de fondo sutil */
+        .hero-bg-grid, .hero-background {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(#E0F2FE 2px, transparent 2px);
+            background-size: 32px 32px;
+            opacity: 0.6;
+            z-index: 0;
+            mask-image: linear-gradient(to bottom, black 0%, transparent 80%);
+        }
+        .hero-content { position: relative; z-index: 10; max-width: 800px; margin: 0 auto; }
+        .lamp-header { width: 100%; z-index: 2; position: relative; max-width: 1100px; margin: 0 auto; }
+        .lamp-nav {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            width: 100%;
+            padding: var(--spacing-4) var(--spacing-6);
+            border-bottom: 1px solid var(--color-border);
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .lamp-logo { 
+            font-size: var(--font-size-lg); 
+            font-weight: var(--font-bold); 
+            color: var(--color-text-heading);
+            text-align: center;
+            text-decoration: none;
+        }
+        .lamp-nav-links { display: none; gap: 32px; }
+        @media (min-width: 1024px) { 
+            .lamp-nav-links { 
+                display: flex; 
+                position: absolute; 
+                right: var(--spacing-6); 
+                top: 50%;
+                transform: translateY(-50%);
+            } 
+        }
+        .lamp-nav-links a { font-size: var(--font-size-base); font-weight: 500; color: var(--color-text-muted); transition: color 0.2s; }
+        .lamp-nav-links a:hover { color: var(--color-primary); }
+
+        .nav-float {
+            position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+            background: rgba(255,255,255,0.8); backdrop-filter: blur(12px);
+            padding: 10px 24px; border-radius: var(--radius-full);
+            border: 1px solid var(--color-border);
+            z-index: 100;
+            display: flex; gap: 20px; align-items: center;
+            box-shadow: var(--shadow-md);
+        }
+        .nav-logo { font-weight: 800; color: var(--color-text-heading); font-size: 1.1rem; }
+        .nav-links { display: none; }
+        @media (min-width: 768px) { .nav-links { display: flex; gap: 20px; font-size: 0.9rem; font-weight: 500; } }
+
+        /* VSL CONTAINER (SIN BORDES NEGROS NI BLANCOS) */
+        .video-container, .vsl-container {
+            margin-top: var(--spacing-8);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 20px 50px -10px rgba(15, 23, 42, 0.2);
+            /* Borde eliminado completamente */
+            border: none;
+            outline: none;
+            position: relative;
+            background: transparent; 
+            
+            /* Ajuste de tamaño para eliminar gaps */
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9; /* Fuerza la proporción 16:9 exacta */
+            display: block; /* Evita comportamientos extraños de flex */
+        }
+        
+        .video-pre-text {
+            color: var(--color-primary-dark);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+            text-align: center;
+            margin: var(--spacing-4) auto;
+        }
+        .lamp-title {
+            background-image: linear-gradient(to bottom, #0F172A, #334155);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: var(--spacing-12);
+            font-size: 28px;
+        }
+        @media (min-width: 768px) { .lamp-title { font-size: var(--font-size-5xl); } }
+        .hero-subtitle {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-base);
+            max-width: 65ch;
+            margin: var(--spacing-6) auto 0;
+            line-height: 1.7;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* SECCIONES ESPECÍFICAS (Adaptadas del PDF) */
+        .result-img-wrapper, .gallery-item {
+            position: relative; overflow: hidden; border-radius: var(--radius-xl); aspect-ratio: 4/5;
+            cursor: pointer; display: block; box-shadow: var(--shadow-md);
+        }
+        .result-img-wrapper img, .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; display: block; }
+        .result-img-wrapper:hover img, .gallery-item:hover img { transform: scale(1.05); }
+        .result-badge {
+            position: absolute; bottom: 10px; left: 10px;
+            background: rgba(255,255,255,0.9); padding: 4px 12px;
+            border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700;
+            color: var(--color-primary-dark);
+        }
+
+        /* Timeline de Recuperación (Estilo Card) */
+        .timeline-item {
+            display: flex; gap: 15px; align-items: flex-start;
+            padding-bottom: 20px; border-left: 2px solid var(--color-border);
+            padding-left: 20px; position: relative;
+        }
+        .timeline-item:last-child { border-left: transparent; }
+        .timeline-dot {
+            position: absolute; left: -9px; top: 0;
+            width: 16px; height: 16px; background: var(--color-primary);
+            border: 3px solid white; border-radius: 50%; box-shadow: var(--shadow-sm);
+        }
+
+        /* PROCEDURES */
+        .tech-card { text-align: center; background: #FFFFFF; border: none; /* Sin borde */ }
+        .tech-card h4 { color: var(--color-primary-dark); margin-bottom: var(--spacing-2); font-size: var(--font-size-base); }
+        .tech-card p { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+        /* ANIMACIONES */
+        .fade-up, .anim-fadeInUp { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s forwards; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+
+        /* Sticky Scroll */
+        .sticky-scroll-container { display: block; }
+        .sticky-scroll-image-panel { display: none; }
+        .sticky-scroll-text-panel { width: 100%; }
+        .sticky-scroll-text-block {
+            position: relative; min-height: 50vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            padding: var(--spacing-6) var(--spacing-4); margin-bottom: var(--spacing-4);
+            border-radius: var(--radius-xl); overflow: hidden;
+            background-size: cover; background-position: center; background-repeat: no-repeat;
+            background-color: #1a1a1a; box-shadow: var(--shadow-md);
+        }
+        .sticky-scroll-text-block::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); z-index: 1; }
+        .sticky-scroll-text-block h3, .sticky-scroll-text-block p { position: relative; z-index: 2; color: #FFFFFF !important; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+        @media (min-width: 1024px) {
+            .sticky-scroll-container { display: flex; flex-direction: row; gap: var(--spacing-10); }
+            .sticky-scroll-image-panel { display: block; width: 50%; position: relative; }
+            .sticky-scroll-image-card { position: sticky; top: var(--spacing-12); height: 60vh; max-height: 500px; border-radius: var(--radius-xl); overflow: hidden; background-color: #F8FAFC; }
+            .sticky-scroll-image-card img { width: 100%; height: 100%; object-fit: cover; }
+            .sticky-scroll-image-card .image-content { display: none; height: 100%; width: 100%; }
+            .sticky-scroll-image-card .image-content.is-active { display: flex; }
+            .sticky-scroll-text-panel { width: 50%; padding-right: var(--spacing-10); }
+            .sticky-scroll-text-block { background-image: none !important; background-color: transparent; min-height: auto; padding: var(--spacing-12) 0; opacity: 0.3; border: none; box-shadow: none; align-items: flex-start; text-align: left; overflow: visible; }
+            .sticky-scroll-text-block::before { display: none; }
+            .sticky-scroll-text-block.is-active { opacity: 1; }
+            .sticky-scroll-text-block h3 { color: var(--color-primary-dark) !important; text-shadow: none; }
+            .sticky-scroll-text-block p { color: var(--color-text) !important; text-shadow: none; }
+        }
+
+        /* Footer */
+        .footer { background-color: #FFFFFF; padding-top: var(--spacing-10); padding-bottom: var(--spacing-6); border-top: 1px solid var(--color-border); }
+        .footer-grid { display: grid; gap: var(--spacing-8); grid-template-columns: 1fr; }
+        @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
+        .footer-col h4 { font-size: var(--font-size-md); margin-bottom: var(--spacing-4); color: var(--color-text-heading); }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: var(--spacing-2); }
+        .footer-links a { color: var(--color-text-muted); }
+        .footer-links a:hover { color: var(--color-primary); }
+        .footer-bottom { margin-top: var(--spacing-8); padding-top: var(--spacing-6); border-top: var(--border-hairline); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAV FLOTANTE (Estilo Aurelia) -->
+    <nav class="lamp-nav" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1100px; z-index: 100;">
+        <a href="#" class="lamp-logo">Dr. Raúl Nahas</a>
+        <div class="lamp-nav-links">
+            <a href="#deep-plane">Deep Plane</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#seguridad">Seguridad</a>
+        </div>
+        <a href="https://wa.link/5znzpq" target="_blank" style="color: var(--color-primary); font-weight: 700; font-size: 0.9rem; position: absolute; right: 24px;">Agendar</a>
+    </nav>
+
+    <!-- 1. HERO + IDENTIFICACIÓN + PROPUESTA + VSL -->
+    <header class="hero-section">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-content" style="padding-top: 80px;">
+            
+            <div class="lamp-main-content">
+                <h1 class="lamp-title">
+                    Rejuvenece hasta 10 años<br>Recupera firmeza y frescura<br>Sin perder tu identidad.
+                </h1>
+            </div>
+
+            <!-- VSL (Video Sales Letter) - VTURB INTEGRATION -->
+            <p class="video-pre-text">La evolución del Lifting Facial explicada por el Dr. Nahas</p>
+            <div class="video-container">
+                <vturb-smartplayer id="vid-696aa83010d72bdc9f320cd8" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> 
+                <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/327a427e-9ecf-4f8e-81db-723589ee90d7/players/696aa83010d72bdc9f320cd8/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+            </div>
+
+            <!-- Identificación (Problema) -->
+            <p class="hero-subtitle">
+                "Si tu rostro muestra cansancio o pérdida de definición, y sientes que no refleja quién eres hoy..."
+            </p>
+
+            <div style="margin-top: 40px;">
+                <a href="https://wa.link/5znzpq" target="_blank" class="btn-cta">
+                    Solicitar Consulta Dr. Nahas
+                    <!-- Icono WhatsApp SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.413z"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. RESULTADOS (Social Proof - CON TUS IMÁGENES) -->
+    <section id="resultados" class="section bg-white">
+        <div class="container">
+            <div class="section-header anim-fadeInUp animate-on-scroll">
+                <h2 class="text-primary">Resultados Naturales</h2>
+                <p style="font-size: 1.1rem;">"Mis pacientes no buscan un disfraz. Buscan verse descansadas, firmes y, sobre todo, naturales."</p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Imagen Subida 1 -->
+                <div class="result-img-wrapper">
+                    <img src="image_40183e.png" alt="Resultado Paciente 1 - Deep Plane">
+                    <div class="result-badge">Caso Destacado 1</div>
+                </div>
+                <!-- Imagen Subida 2 -->
+                <div class="result-img-wrapper">
+                    <img src="image_40181b.png" alt="Resultado Paciente 2 - Full Face">
+                    <div class="result-badge">Caso Destacado 2</div>
+                </div>
+                <!-- Caso Adicional (Placeholder para balance visual) -->
+                <div class="result-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600" alt="Resultado Paciente 3">
+                    <div class="result-badge">Blefaroplastia + Lifting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. AUTORIDAD (Bio + Stats Estilo Aurelia) -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 40px;">
+                <!-- Bio Texto -->
+                <div>
+                    <span style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: 700; color: var(--color-primary);">Dr. Raúl Nahas</span>
+                    <h2 style="margin-top: 10px;">Experiencia y Precisión</h2>
+                    <p>Soy Cirujano Plástico con <strong>más de 30 años de experiencia internacional</strong> especializado en Rejuvenecimiento Facial y CEO de Clínica Nahas.</p>
+                    <p style="color: var(--color-text-muted);">
+                        "Priorizamos la seguridad, respetamos la anatomía real de cada paciente y logramos un resultado que no se note artificial."
+                    </p>
+                    
+                    <!-- KPI Cards (Estilo del archivo que subiste) -->
+                    <div class="grid grid-2" style="margin-top: 30px;">
+                        <div class="card" style="padding: 15px; text-align: center;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-primary);">+30</div>
+                            <div style="font-size: 0.9rem; font-weight: 600;">Años de Experiencia</div>
+                        </div>
+                        <div class="card" style="padding: 15px; text-align: center;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-primary);">Top</div>
+                            <div style="font-size: 0.9rem; font-weight: 600;">Tecnología Global</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Foto Doctor -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" alt="Dr. Raúl Nahas" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EDUCACIÓN (Deep Plane) -->
+    <section id="deep-plane" class="section bg-white">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="card" style="background: #F0F9FF;">
+                    <img src="https://placehold.co/600x500/0ea5e9/ffffff?text=Anatomia+Deep+Plane" alt="Esquema Deep Plane" style="mix-blend-mode: multiply;">
+                </div>
+                <div>
+                    <h2>¿Qué es el Deep Plane?</h2>
+                    <p>El envejecimiento facial real ocurre por debajo de la piel, en los tejidos profundos (SMAS). <strong>El Deep Plane actúa exactamente ahí.</strong></p>
+                    
+                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                        <li style="display: flex; gap: 10px; margin-bottom: 15px; align-items: center;">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span><strong>Sin Tensión:</strong> La piel acompaña sin estiramientos.</span>
+                        </li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 15px; align-items: center;">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span><strong>Desde Adentro:</strong> Corrige la estructura, no solo la superficie.</span>
+                        </li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 15px; align-items: center;">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span><strong>Duradero:</strong> Un resultado que se mantiene en el tiempo.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TÉCNICAS (Grid Cards) -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="section-header anim-fadeInUp animate-on-scroll">
+                <h2>Plan Quirúrgico Personalizado</h2>
+                <p>Combinamos técnicas de precisión según tu anatomía.</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card tech-card">
+                    <h4 class="text-primary">Deep Plane Face Lift</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Corrige la flacidez profunda y redefine el óvalo facial.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Lifting Cervicofacial</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Elimina papada y define el ángulo del cuello.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Blefaroplastia</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Rejuvenece la mirada eliminando exceso de piel o bolsas.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Brow Lift</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Eleva cejas descendidas y abre la mirada.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Cantopexia</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Reposiciona el ángulo externo del ojo.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Lip Lift</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Acorta distancia labio-nariz para rejuvenecer sonrisa.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Lipofilling Facial</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Restaura volumen perdido con tu propia grasa.</p>
+                </div>
+                <div class="card tech-card">
+                    <h4 class="text-primary">Rinoplastia</h4>
+                    <p style="font-size: 0.9rem; margin: 0;">Armoniza la estructura nasal y equilibra el perfil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SEGURIDAD & RECUPERACIÓN (Combinados) -->
+    <section id="seguridad" class="section bg-white">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 60px;">
+                
+                <!-- Columna Izquierda: Seguridad -->
+                <div>
+                    <h2>Seguridad Total</h2>
+                    <p>Protocolos de nivel clínico para tu tranquilidad.</p>
+                    
+                    <div class="grid grid-2" style="gap: 15px;">
+                        <div class="card" style="padding: 15px;">
+                            <i class="fa-solid fa-brain text-primary" style="font-size: 1.5rem; margin-bottom: 10px;"></i>
+                            <h4 style="font-size: 1rem;">Neuromonitoreo</h4>
+                            <p style="font-size: 0.85rem; margin:0;">Protege nervios y gestos naturales.</p>
+                        </div>
+                        <div class="card" style="padding: 15px;">
+                            <i class="fa-solid fa-heart-pulse text-primary" style="font-size: 1.5rem; margin-bottom: 10px;"></i>
+                            <h4 style="font-size: 1rem;">Monitor Anestésico</h4>
+                            <p style="font-size: 0.85rem; margin:0;">Control continuo por especialistas.</p>
+                        </div>
+                        <div class="card" style="padding: 15px;">
+                            <i class="fa-solid fa-microchip text-primary" style="font-size: 1.5rem; margin-bottom: 10px;"></i>
+                            <h4 style="font-size: 1rem;">Cauterio Bipolar</h4>
+                            <p style="font-size: 0.85rem; margin:0;">Menos inflamación y sangrado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Timeline Recuperación (Estilo Clean) -->
+                <div>
+                    <h2>Tu Recuperación</h2>
+                    <div class="card" style="background: #F8FAFC;">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div>
+                                <h4>La Cirugía</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Duración: 3 a 5 horas. Diseñada para tu confort.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div>
+                                <h4>Reposo Inicial</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">7 a 10 días de tranquilidad en casa.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div>
+                                <h4>Vida Social</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Retorno a la normalidad desde la 2da semana.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div>
+                                <h4>Resultados</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Visibles a 30 días. Consolidados a 3 meses.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px; font-size: 0.9rem; font-weight: 600; color: var(--color-primary);">
+                            <i class="fa-solid fa-user-doctor"></i> Acompañamiento personal full time.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CIERRE & CTA -->
+    <section id="contacto" class="section" style="background: var(--color-bg); padding-bottom: 80px;">
+        <div class="container text-center" style="max-width: 700px;">
+            <h2 style="font-size: 2.5rem;">Recupera tu Coherencia</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">
+                Si sientes que tu imagen ya no acompaña quién eres hoy... Estás a una consulta de cambiar tu confianza y las oportunidades que se abren.
+            </p>
+            <a href="https://wa.link/5znzpq" target="_blank" class="btn-cta">
+                Solicitar Consulta con Dr. Nahas
+                <!-- Icono WhatsApp SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.413z"/></svg>
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--color-text-muted);">
+                <i class="fa-solid fa-lock"></i> Datos 100% confidenciales.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background: white; padding: 40px 0; border-top: 1px solid var(--color-border);">
+        <div class="container text-center">
+            <h4 style="margin-bottom: 10px;">Clínica Nahas</h4>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+                &copy; 2024 Dr. Raúl Nahas. Todos los derechos reservados.<br>
+                Especialista en Deep Plane Face Lift.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script simple de animaciones al scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-up, .anim-fadeInUp, .animate-on-scroll').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
