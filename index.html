@@ -307,7 +307,7 @@
 
         /* SECCIONES ESPECÍFICAS (Adaptadas del PDF) */
         .result-img-wrapper, .gallery-item {
-            position: relative; overflow: hidden; border-radius: var(--radius-xl); aspect-ratio: 4/5;
+            position: relative; overflow: hidden; border-radius: var(--radius-xl); aspect-ratio: 16/9;
             cursor: pointer; display: block; box-shadow: var(--shadow-md);
         }
         .result-img-wrapper img, .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; display: block; }
@@ -386,6 +386,53 @@
         .footer-links a:hover { color: var(--color-primary); }
         .footer-bottom { margin-top: var(--spacing-8); padding-top: var(--spacing-6); border-top: var(--border-hairline); text-align: center; font-size: var(--font-size-sm); color: var(--color-text-muted); }
 
+        /* ESTILOS PARA EL LIGHTBOX (Visor de imágenes) */
+    .lightbox-modal {
+        display: none; /* Oculto por defecto */
+        position: fixed;
+        z-index: 2000; /* Por encima de todo */
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+    }
+
+    .lightbox-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 1000px;
+        max-height: 80vh;
+        object-fit: contain; /* Asegura que se vea la foto completa sin recortes */
+        animation-name: zoom;
+        animation-duration: 0.3s;
+        border-radius: 8px;
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+    .close-lightbox {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .close-lightbox:hover,
+    .close-lightbox:focus {
+        color: var(--color-primary);
+        text-decoration: none;
+        cursor: pointer;
+    }
     </style>
 </head>
 <body>
@@ -404,7 +451,7 @@
     <!-- 1. HERO + IDENTIFICACIÓN + PROPUESTA + VSL -->
     <header class="hero-section">
         <div class="hero-bg-grid"></div>
-        <div class="container hero-content" style="padding-top: 80px;">
+        <div class="container hero-content" style="padding-top: 10px;">
             
             <div class="lamp-main-content">
                 <h1 class="lamp-title">
@@ -437,25 +484,17 @@
     <!-- 2. RESULTADOS (Social Proof - CON TUS IMÁGENES) -->
     <section id="resultados" class="section bg-white">
         <div class="container">
-            <div class="section-header anim-fadeInUp animate-on-scroll">
-                <h2 class="text-primary">Resultados Naturales</h2>
-                <p style="font-size: 1.1rem;">"Mis pacientes no buscan un disfraz. Buscan verse descansadas, firmes y, sobre todo, naturales."</p>
-            </div>
-
             <div class="grid grid-3">
-                <!-- Imagen Subida 1 -->
                 <div class="result-img-wrapper">
-                    <img src="image_40183e.png" alt="Resultado Paciente 1 - Deep Plane">
+                    <img src="02.jpg" alt="Resultado Paciente 1 - Deep Plane">
                     <div class="result-badge">Caso Destacado 1</div>
                 </div>
-                <!-- Imagen Subida 2 -->
                 <div class="result-img-wrapper">
-                    <img src="image_40181b.png" alt="Resultado Paciente 2 - Full Face">
+                    <img src="01.jpg" alt="Resultado Paciente 2 - Full Face">
                     <div class="result-badge">Caso Destacado 2</div>
                 </div>
-                <!-- Caso Adicional (Placeholder para balance visual) -->
                 <div class="result-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=600" alt="Resultado Paciente 3">
+                    <img src="03.jpg" alt="Resultado Paciente 3">
                     <div class="result-badge">Blefaroplastia + Lifting</div>
                 </div>
             </div>
@@ -673,18 +712,42 @@
 
     <!-- Script simple de animaciones al scroll -->
     <script>
+        // Lógica del Lightbox
         document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateY(0)';
-                    }
+            // Obtener el modal
+            var modal = document.getElementById("miLightbox");
+            var modalImg = document.getElementById("imgExpandida");
+            
+            // Seleccionar todas las imágenes dentro de 'result-img-wrapper'
+            var images = document.querySelectorAll('.result-img-wrapper img');
+            
+            // Asignar el evento click a cada imagen
+            images.forEach(img => {
+                img.addEventListener('click', function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src; // Pone la misma imagen que clickeaste
                 });
-            }, { threshold: 0.1 });
+            });
 
-            document.querySelectorAll('.fade-up, .anim-fadeInUp, .animate-on-scroll').forEach(el => observer.observe(el));
+            // Obtener el botón de cerrar
+            var span = document.getElementsByClassName("close-lightbox")[0];
+
+            // Cerrar al hacer click en la X
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+            
+            // Cerrar también si hacen click fuera de la imagen (en el fondo negro)
+            modal.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
         });
     </script>
+<div id="miLightbox" class="lightbox-modal">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="imgExpandida">
+    </div>
 </body>
 </html>
